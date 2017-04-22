@@ -9,5 +9,7 @@ call bootstrap.bat
 rem Most libraries can be static libs
 b2 -j%cores% toolset=msvc-14.0 address-model=64 architecture=x86 link=static threading=multi runtime-link=shared --build-type=minimal stage --stagedir=stage/x64 
 b2 -j%cores% toolset=msvc-14.0 address-model=32 architecture=x86 link=static threading=multi runtime-link=shared --build-type=minimal stage --stagedir=stage/win32
+b2 -j%cores% toolset=msvc-14.0 address-model=64 architecture=x86 link=dynamic threading=multi runtime-link=shared --build-type=minimal stage --stagedir=stage/x64 
+b2 -j%cores% toolset=msvc-14.0 address-model=32 architecture=x86 link=dynamic threading=multi runtime-link=shared --build-type=minimal stage --stagedir=stage/win32
 
 pause
