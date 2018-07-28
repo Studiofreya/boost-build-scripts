@@ -7,10 +7,10 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(PropSheetPath)boost_1_68_0\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(PropSheetPath)boost_1_65_1\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(PropSheetPath)boost_1_68_0\stage\$(Platform)\lib\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(PropSheetPath)boost_1_65_1\stage\$(Platform)\lib\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
